@@ -1,0 +1,83 @@
+.project-list {
+    background-color: #fff;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.project-list__title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #6a1b9a;
+    font-size: 48px;
+}
+
+.project-list__create {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.project-list__input {
+    flex: 1;
+    max-width: 300px;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.project-list__button {
+    padding: 0.7rem 1.2rem;
+    background-color: #B39DDB;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.project-list__button:hover {
+    background-color: #9575cd;
+}
+
+.project-list__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.project-list__card {
+    background-color: #fafafa;
+    width: 320px;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.project-list__card:hover {
+    transform: translateY(-5px);
+}
+
+.project-list__card-title {
+    text-align: center;
+    color: #6a1b9a;
+    font-size: 28px;
+}
+
+.project-list__card-image {
+    width: 100%;
+    height: 180px; /* 원하는 높이로 조정 가능 */
+    object-fit: cover; /* 이미지 비율을 유지하면서 박스에 꽉 채움 */
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.project-list__link {
+    text-decoration: none;
+    color: inherit;
+}
+  

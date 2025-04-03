@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.header__logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #6a1b9a; /* 파스텔 보라색 계열 */
+    text-decoration: none;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__user {
+    margin-right: 1rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.header__button {
+    background-color: #B39DDB; /* 파스텔 보라색 */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.header__button:hover {
+    background-color: #9575cd;
+}
+  
