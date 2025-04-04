@@ -10,7 +10,7 @@
 .project-detail__title {
     text-align: center;
     margin-bottom: 1.5rem;
-    color: #6a1b9a;
+    color: #6c63ff;
     font-size: 1.8rem;
 }
 
@@ -20,7 +20,7 @@
 
 .project-detail__subtitle {
     margin-bottom: 1rem;
-    color: #6a1b9a;
+    color: #6c63ff;
     font-size: 1.4rem;
 }
 
@@ -39,7 +39,7 @@
 
 .project-detail__button {
     padding: 0.7rem 1rem;
-    background-color: #B39DDB;
+    background-color: #6c63ff;
     color: white;
     border: none;
     border-radius: 4px;
@@ -47,7 +47,7 @@
 }
 
 .project-detail__button:hover {
-    background-color: #9575cd;
+    background-color: #6c63ff;
 }
 
 .project-detail__class-list {

@@ -1,160 +1,220 @@
-
 .train-panel {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
-}
-
-.train-panel__title {
-    text-align: center;
+    padding: 1rem;
+    font-family: sans-serif;
+    background-color: #f5f6fa;
+  }
+  
+  .train-panel__title {
     margin-bottom: 1rem;
-    color: #6a1b9a;
-    font-size: 1.8rem;
-}
-
-.train-panel__video-preview {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6c63ff;
+  }
+  
+  /* 클래스 카드 */
+  .class-card {
+    border: 1px solid #6c63ff;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #fff;
+  }
+  
+  .class-card__header {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.train-panel__video {
-    border: 2px solid #6a1b9a;
-    border-radius: 4px;
-}
-
-.train-panel__canvas {
-    border: 2px dashed #B39DDB;
-    border-radius: 4px;
-}
-
-.train-panel__samples {
-    margin-bottom: 1rem;
-}
-
-.train-panel__sample-group {
-    background-color: #fafafa;
-    padding: 0.8rem;
-    border: 1px solid #eee;
-    border-radius: 4px;
-    margin-bottom: 0.8rem;
-}
-
-.train-panel__sample-title {
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-    color: #6a1b9a;
-}
-
-.train-panel__actions {
-    display: flex;
-    gap: 0.5rem;
     align-items: center;
-}
-
-.train-panel__btn {
-    padding: 0.5rem 1rem;
-    background-color: #B39DDB;
+    gap: 0.5rem;
+  }
+  
+  .class-card__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex: 1;
+    position: relative;
+    color: #6c63ff;
+  }
+  
+  .class-card__edit-icon {
+    margin-left: 0.5rem;
+    cursor: pointer;
+    color: #6c63ff;
+  }
+  
+  .class-card__btn {
+    font-size: 16px;
+    background-color: #6c63ff;
     color: #fff;
     border: none;
+    padding: 0.4rem 0.8rem;
     border-radius: 4px;
     cursor: pointer;
-}
-
-.train-panel__btn:hover {
-    background-color: #9575cd;
-}
-
-.train-panel__file-input {
-    padding: 0.3rem;
-}
-
-.train-panel__params {
-    background-color: #f5f5f5;
-    padding: 1rem;
+  }
+  
+  .class-card__btn:hover {
+    background-color: #5750d8; /* 메인 컬러보다 다소 어두운 색 */
+  }
+  
+  .class-card__file-input {
+    display: none;
+  }
+  
+  .class-card__name-input {
+    font-size: 1rem;
+    padding: 0.2rem;
+  }
+  
+  .class-card__body {
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+  }
+  
+  .class-card__webcam-area {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .class-card__video {
+    background: #000;
+    border: 1px solid #ccc;
+  }
+  
+  .class-card__capture-buttons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .class-card__samples-right {
+    flex: 1;
+  }
+  
+  .class-card__thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .thumbnail-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .class-card__thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
     border: 1px solid #ddd;
     border-radius: 4px;
-    margin-bottom: 1rem;
-}
-
-.train-panel__params-title {
-    margin-bottom: 0.8rem;
-    font-size: 1.4rem;
-    color: #6a1b9a;
-}
-
-.train-panel__param-group {
+  }
+  
+  .thumbnail-delete-btn {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #6c63ff;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+  }
+  
+  /* 학습 파라미터 영역 */
+  .train-panel__params {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .train-panel__param-group {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.train-panel__param-label {
-    width: 120px;
-    color: #555;
-}
-
-.train-panel__param-input {
-    flex: 1;
-    padding: 0.4rem;
-    border: 1px solid #ccc;
+    gap: 0.3rem;
+  }
+  
+  .train-panel__param-input {
+    width: 80px;
+    border: 1px solid #6c63ff;
     border-radius: 4px;
-}
-
-.train-panel__buttons {
-    text-align: center;
-}
-  
-.train-panel__video-preview {
-    position: relative;
-    margin-bottom: 16px;
-  }
-  .train-panel__video-header {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10;
-  }
-  .train-panel__edit-icon {
-    margin-left: 8px;
-    cursor: pointer;
-  }
-  .train-panel__name-input {
-    font-size: 1rem;
-    padding: 4px;
+    padding: 0.2rem;
   }
   
-  /* TrainPanel.css */
-.webcam-modal {
+  .train-panel__buttons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  /* 예측 오버레이 */
+  .prediction-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(108, 99, 255, 0.7); /* 메인 컬러에 투명도 적용 */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 999;
   }
   
-  .webcam-modal__content {
+  .prediction-overlay__content {
     background: #fff;
     padding: 1rem;
-    border-radius: 4px;
+    border-radius: 6px;
     text-align: center;
+    max-width: 500px;
+    width: 100%;
   }
   
-  .webcam-modal__video {
-    background: #000;
+  .prediction-overlay__video {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #6c63ff;
     margin-bottom: 1rem;
   }
   
-  .webcam-modal__buttons button {
-    margin: 0 0.5rem;
+  .prediction-overlay__bar {
+    margin-bottom: 1rem;
+  }
+  
+  .prediction-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .prediction-bar__label {
+    width: 80px;
+    text-align: right;
+    color: #6c63ff;
+  }
+  
+  .prediction-bar__container {
+    flex: 1;
+    background: #eee;
+    height: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .prediction-bar__fill {
+    background: #6c63ff;
+    height: 100%;
+    transition: width 0.3s;
+  }
+  
+  .prediction-bar__percent {
+    width: 50px;
+    text-align: left;
+    color: #6c63ff;
   }
   

@@ -26,7 +26,7 @@
 }
 
 .header__button {
-    background-color: #B39DDB; /* 파스텔 보라색 */
+    background-color: #6c63ff;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -37,6 +37,6 @@
 }
 
 .header__button:hover {
-    background-color: #9575cd;
+    background-color: #6c63ff;
 }
   
